@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Martin Bevemyr – CAD Portfölj</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+  <header id="header">
+    <div class="header-inner">
+      <a href="#" class="logo">MB</a>
+      <nav>
+        <button class="nav-toggle" aria-label="Öppna meny">
+          <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-links">
+          <li><a href="#om-mig">Om mig</a></li>
+          <li><a href="#projekt">Projekt</a></li>
+          <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="hero">
+    <div class="hero-content">
+      <h1>Martin Bevemyr</h1>
+      <p class="hero-subtitle">CAD &amp; Konstruktion</p>
+      <p class="hero-tagline">Mekanisk design – från idé till färdig produkt</p>
+      <a href="#projekt" class="btn-primary">Se mina projekt</a>
+    </div>
+  </section>
+
+  <section id="om-mig">
+    <div class="container">
+      <h2>Om mig</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            Jag är en konstruktör med passion för mekanisk design och CAD-modellering.
+            Jag trivs med att ta projekt från konceptskiss till färdig produkt, och har
+            erfarenhet av att arbeta med både enklare konstruktioner och mer komplexa
+            sammanställningar.
+          </p>
+          <p>
+            Nedan hittar du ett urval av mina CAD-projekt – allt från möbeldesign
+            och produktutveckling till mer kreativa hobbyprojekt.
+          </p>
+        </div>
+        <div class="skills">
+          <h3>Kompetenser</h3>
+          <ul class="skill-list">
+            <li><i class="fas fa-drafting-compass"></i> CAD-modellering</li>
+            <li><i class="fas fa-cubes"></i> 3D-modellering &amp; sammanställningar</li>
+            <li><i class="fas fa-ruler-combined"></i> Ritningsframställning</li>
+            <li><i class="fas fa-cogs"></i> Mekanisk konstruktion</li>
+            <li><i class="fas fa-industry"></i> Tillverkningsanpassad design</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projekt">
+    <div class="container">
+      <h2>Projekt</h2>
+      <p class="section-intro">Klicka på ett projekt för att öppna ritningen i en ny flik.</p>
+      <div id="project-grid" class="project-grid">
+        <!-- Projektkort genereras av script.js -->
+      </div>
+    </div>
+  </section>
+
+  <section id="kontakt">
+    <div class="container">
+      <h2>Kontakt</h2>
+      <p class="section-intro">Intresserad av att samarbeta eller vill veta mer? Hör av dig!</p>
+      <div class="contact-grid">
+        <a href="mailto:martin@example.com" class="contact-card">
+          <i class="fas fa-envelope"></i>
+          <span>martin@example.com</span>
+        </a>
+        <a href="tel:+46700000000" class="contact-card">
+          <i class="fas fa-phone"></i>
+          <span>+46 70 000 00 00</span>
+        </a>
+        <a href="https://linkedin.com/in/" target="_blank" rel="noopener" class="contact-card">
+          <i class="fab fa-linkedin"></i>
+          <span>LinkedIn</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Martin Bevemyr</p>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.0.379/pdf.min.mjs" type="module"></script>
+  <script src="script.js" type="module"></script>
+</body>
+</html>
