@@ -314,9 +314,10 @@ section h2 {
 }
 
 .contact-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  justify-content: center;
   gap: 24px;
+  flex-wrap: nowrap;
 }
 
 .contact-card {
@@ -325,6 +326,8 @@ section h2 {
   align-items: center;
   gap: 12px;
   padding: 32px 24px;
+  flex: 1;
+  min-width: 0;
   background: var(--color-bg);
   border-radius: var(--radius);
   text-decoration: none;
@@ -369,10 +372,8 @@ footer {
     gap: 32px;
   }
 
-  .contact-grid {
-    grid-template-columns: 1fr;
-    max-width: 400px;
-    margin: 0 auto;
+  .contact-card {
+    padding: 24px 12px;
   }
 }
 
