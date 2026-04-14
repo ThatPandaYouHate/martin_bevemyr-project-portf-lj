@@ -181,9 +181,21 @@ section h2 {
 
 .about-grid {
   display: grid;
-  grid-template-columns: 1.5fr 1fr;
+  grid-template-columns: auto 1fr;
   gap: 48px;
   align-items: start;
+}
+
+.about-photo {
+  grid-row: 1 / 3;
+}
+
+.about-photo img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: var(--shadow);
 }
 
 .about-text p {
@@ -192,10 +204,20 @@ section h2 {
   font-size: 1.05rem;
 }
 
+.skills {
+  grid-column: 1 / -1;
+}
+
 .skills h3 {
   font-size: 1.1rem;
   font-weight: 600;
   margin-bottom: 16px;
+}
+
+.skill-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
 }
 
 .skill-list {
@@ -370,6 +392,15 @@ footer {
   .about-grid {
     grid-template-columns: 1fr;
     gap: 32px;
+    justify-items: center;
+  }
+
+  .about-photo {
+    grid-row: auto;
+  }
+
+  .skill-columns {
+    grid-template-columns: 1fr;
   }
 
   .contact-card {
